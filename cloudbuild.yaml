@@ -9,7 +9,7 @@ steps:
   args: ['push', 'gcr.io/${PROJECT_ID}/node-web-app:$COMMIT_SHA']
 
 
-- name: 'gcr.io/cloud-builders/kubectl'
-  args: ['set', 'image', 'deployment/mydeployment', 'mynode=gcr.io/xenon-petal-346904/node-web-app:$COMMIT_SHA']
+# - name: 'gcr.io/cloud-builders/kubectl'
+#   args: ['set', 'image', 'deployment/mydeployment', 'mynode=gcr.io/xenon-petal-346904/node-web-app:$COMMIT_SHA']
  
 
