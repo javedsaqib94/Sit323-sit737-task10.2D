@@ -5,7 +5,6 @@ metadata:
   labels:
     app: myapp
 spec:
-  # modify replicas according to your case
   replicas: 3
   selector:
     matchLabels:
@@ -15,8 +14,8 @@ spec:
       labels:
         tier: frontend
     spec:
-    containers:
-      - name: mynode
-        image: gcr.io/xenon-petal-346904/node-web-app:latest
-        ports:
-        - containerPort: 8080
+      containers:
+        - name: mynode
+          image: gcr.io/xenon-petal-346904/node-web-app:latest
+          ports:
+            - containerPort: 8080

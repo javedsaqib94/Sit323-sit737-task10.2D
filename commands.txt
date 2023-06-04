@@ -41,7 +41,7 @@ gcloud container clusters create-auto myowncluster1 --region=australia-southeast
 gcloud container clusters get-credentials myowncluster1  --region=australia-southeast1-a
 
 #Create the Deployment on the cluster
-kubectl apply -f createDeployment.yaml
+kubectl apply -f createDeployments.yaml
 
 
 #Create a service by exposing the Deployment
