@@ -5,7 +5,7 @@ const HOST = '0.0.0.0';
 
 const app = express();
 app.get('/', (req, res) => {
-    res.send('Hello there app2 is here for testing')
+    res.send('Hello there app2 is here for testing, changes are made with CICD pipeline')
 });
 
 
